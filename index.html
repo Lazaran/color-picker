@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Color Picker</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body onmousemove="vhToPix()">
+
+        
+        <div id="fullcont">
+
+            <div id="infobutton"></div>
+            <div id="infocont">
+                <h2>RGB</h2>
+                <h2>HEX</h2>
+                <h2>HSV</h2>
+            </div>
+            <div id="fullcolor">
+                <h1 id="colorprint"></h1>
+            </div>
+            <div id="hueEvent" onmousemove="hueEvent(event)">
+            </div>
+            <div id="satEvent" onmousemove="satEvent(event)"></div>
+            <div id="valEvent" onmousemove="valEvent(event)"></div>
+            <div id="inverse">
+                <p id="invColor"></p>
+            </div>
+        </div>
+
+
+        <script>
+            document.getElementById("infobutton").innerHTML = "Copy";
+            
+        </script>
+    </body>
+</html>
